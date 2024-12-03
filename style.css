@@ -75,6 +75,9 @@ body{
     align-items: start;
     justify-content: space-between;
 }
+.profile-container.hide{
+    display: none;
+}
 .profile-container .profile-details{
     display: flex;
     flex-direction: row;
@@ -151,8 +154,38 @@ body{
     letter-spacing: 5px;
     font-weight: 500;
 }
-.tooltip ul li a img{
-    width: 20px;
+.tooltip-mobile.hide{
+    display: none;
+}
+.tooltip-mobile{
+    margin-top: -5%;
+    max-width:100%;
+    background-color: var(--title-colors);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-radius: 0px 0px 10px 10px;
+}
+.tooltip-mobile ul{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--text-color);
+    letter-spacing: 8px;
+    font-weight: 500;
+}
+.tooltip-mobile ul li a img{
+    width: 25px;
+}
+.share-icon i{
+    color: #FFF;
+    background-color: var(--text-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 768px) {
@@ -205,10 +238,6 @@ body{
     .profile-name-and-date .date{
         font-size: 1em;
     }
-
-
-
-
 }
 
 @media(max-width: 530px){

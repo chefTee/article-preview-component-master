@@ -25,21 +25,22 @@ shareButton.addEventListener('mouseleave', () => {
 
 })
 
-shareButton.addEventListener('click', () => {
+shareButton.addEventListener('click', (e) => {
     if(window.matchMedia('(max-width: 767px)').matches){
         profileSection.classList.toggle('hide');
         mobileTooltip.classList.toggle('hide');
     }
+    e.stopPropagation()
 })
 
 
-// mobileTooltip.addEventListener('click', (e) => {
-//     e.stopPropagation();
-// })
+mobileTooltip.addEventListener('click', (e) => {
+    e.stopPropagation();
+})
 
-// document.addEventListener('click', (event) => {
-//     if(!mobileTooltip.contains(event.target)){
-//         profileSection.classList.remove('hide');
-//         mobileTooltip.classList.add('hide');
-//     }
-// })
+document.addEventListener('click', (event) => {
+    if(!mobileTooltip.contains(event.target)){
+        profileSection.classList.toggle('hide');
+        mobileTooltip.classList.toggle('hide');
+    }
+})

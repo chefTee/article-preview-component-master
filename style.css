@@ -116,9 +116,10 @@ body{
     color: #fff;
 }
 .tooltip.hide{
+    display: none;
     opacity: 0;
 }
-/* .tooltip{
+.tooltip{
     opacity: 0;
     position: absolute;
     bottom: 32%;
@@ -130,7 +131,7 @@ body{
     transition:all ease 7s;
     transition: opacity 0.3s ease,
                 transform ease-in-out 0.5s;
-} */
+}
 .tooltip:not(.hide) {
     opacity: 1;
     transform: translateY(-5px);

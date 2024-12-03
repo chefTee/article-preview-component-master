@@ -34,9 +34,9 @@ shareButton.addEventListener('click', (e) => {
 })
 
 
-// mobileTooltip.addEventListener('click', (e) => {
-//     e.stopPropagation();
-// })
+mobileTooltip.addEventListener('click', (e) => {
+    e.stopPropagation();
+})
 
 document.addEventListener('click', (event) => {
     if(!mobileTooltip.contains(event.target)){
